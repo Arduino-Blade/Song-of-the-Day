@@ -26,7 +26,7 @@
         }
         .app-container {
             width: 100%;
-            max-width: 560px;
+            max-width: 600px;
             background: var(--glass-bg);
             backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
@@ -37,22 +37,33 @@
         }
         h1 { font-size: 1.85rem; margin-bottom: 0.5rem; color: var(--accent); }
         p { color: var(--text-muted); margin-bottom: 1.5rem; }
-        .player-box { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 1rem; margin-bottom: 1.5rem; text-align: left; }
-        .feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem; }
-        .feature-item { background: rgba(255, 255, 255, 0.03); padding: 0.5rem 0.75rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: left; margin-top: 1.5rem; }
+        .module-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); padding: 1rem; border-radius: 1rem; }
+        .module-card h3 { font-size: 1rem; margin: 0 0 0.5rem 0; color: var(--accent); }
+        .module-card p { font-size: 0.8rem; margin: 0; color: var(--text-muted); }
     </style>
 </head>
 <body>
     <div class="app-container">
         <h1>Uncle Dad's Song of the Day</h1>
-        <p>Your daily music trivia, streaming rotation, and family voting hub[cite: 1]</p>
-        <div class="player-box">
-            <strong>Current System Status:</strong> Full 30-day rotation queue, trivia engine, and admin mode modules loaded[cite: 1].
-            <div class="feature-list">
-                <div class="feature-item">🎵 YouTube Player API</div>
-                <div class="feature-item">⏱️ Time Machine Archive</div>
-                <div class="feature-item">❓ Daily Music Trivia</div>
-                <div class="feature-item">🗳️ Fan Voting Board</div>
+        <p>Curated track rotation queue, YouTube streaming, trivia & family voting hub[cite: 1]</p>
+        
+        <div class="module-grid">
+            <div class="module-card">
+                <h3>🎵 YouTube Player</h3>
+                <p>Live embedded player & parser[cite: 1]</p>
+            </div>
+            <div class="module-card">
+                <h3>⏱️ Time Machine</h3>
+                <p>Archive drawer for past tracks[cite: 1]</p>
+            </div>
+            <div class="module-card">
+                <h3>❓ Daily Trivia</h3>
+                <p>3-question music trivia engine[cite: 1]</p>
+            </div>
+            <div class="module-card">
+                <h3>🗳️ Voting Board</h3>
+                <p>Fan suggestions & consensus promotion[cite: 1]</p>
             </div>
         </div>
     </div>
